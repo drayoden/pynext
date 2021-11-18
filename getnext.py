@@ -1,11 +1,14 @@
 #!/usr/bin/python3.8
 
 # 'pip install gspread' -- google sheets API
-import gspread 
+import gspread, os
 dsh = "-" * 60
 
+# get the current directory of the script...
+curdir = os.path.dirname(os.path.abspath(__file__))
 
-gc = gspread.service_account(filename='getnextcreds.json') 
+
+gc = gspread.service_account(filename = curdir + '/getnextcreds.json') 
 wsh = gc.open('Budg').worksheet('Last')
 
 val = wsh.get_values('alltasks')
