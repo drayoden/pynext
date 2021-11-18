@@ -10,7 +10,7 @@
     - ADD KEY -> Create New Key -> JSON -> CREATE
     - download the JSON file, move it in the same folder as the script and rename to creds.json
   - copy the 'client_email' -> goto the 'Budg' sheet, click 'Share', paste the email address, keep 'Editor' role
-  - Now the sheet is ready to use as and API. see 'getnext.py'
+  - Now the sheet is ready to use as an API. see 'getnext.py'
 
 
 
